@@ -2,29 +2,26 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DialogueHolder : MonoBehaviour {
-
-    
-    private DialogueManager dMan;
-
+public class DialogueHolder : MonoBehaviour
+{
+    private DialogueManager dialogueManager;
     public string[] dialogueLines;
 
-	// Use this for initialization
-	void Start ()
+    void Start()
     {
-        dMan = FindObjectOfType<DialogueManager>();
-	}
+        dialogueManager = FindObjectOfType<DialogueManager>();
+    }
 
     void OnTriggerStay2D(Collider2D other)
     {
-            if (other.gameObject.name == "Paladin" && Input.GetKeyUp(KeyCode.E))
+        if (other.gameObject.name == "Paladin" && Input.GetKeyUp(KeyCode.E))
+        {
+            if (!dialogueManager.dialogueActive)
             {
-                if (!dMan.dialogueActive)
-                {
-                    dMan.dialogueLines = dialogueLines;
-                    dMan.currentLine = 0;
-                    dMan.ShowDialogue();
-                }
+                dialogueManager.dialogueLines = dialogueLines;
+                dialogueManager.currentLine = 0;
+                dialogueManager.ShowDialogue();
             }
+        }
     }
 }

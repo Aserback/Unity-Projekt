@@ -26,7 +26,6 @@ public class CameraController : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
     void Update()
     {
         // Übergabe der neuen Position der Kamera bzw. dass sie dem angegebenen Objekt folgt. 

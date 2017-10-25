@@ -5,21 +5,21 @@ using UnityEngine;
 public class PlayerStartPoint : MonoBehaviour
 {
     // Zur Übergabe des Spielers und der Kamera an andere Szenen
-    private PlayerController thePlayer;
-    private CameraController theCamera;
+    private PlayerController player;
+    private CameraController playerCamera;
 
     public string pointName;
 
     void Start()
     {
-        thePlayer = FindObjectOfType<PlayerController>();
+        player = FindObjectOfType<PlayerController>();
 
-        if (thePlayer.startPoint == pointName)
+        if (pointName.Equals(player.startPoint))
         {
-            thePlayer.transform.position = transform.position;
+            player.transform.position = transform.position;
 
-            theCamera = FindObjectOfType<CameraController>();
-            theCamera.transform.position = new Vector3(transform.position.x, transform.position.y, theCamera.transform.position.z);
+            playerCamera = FindObjectOfType<CameraController>();
+            playerCamera.transform.position = new Vector3(transform.position.x, transform.position.y, playerCamera.transform.position.z);
         }
     }
 }

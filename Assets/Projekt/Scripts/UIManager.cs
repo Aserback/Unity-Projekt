@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class UIManager : MonoBehaviour {
-
+public class UIManager : MonoBehaviour
+{
     private static bool UIExists;
     private PlayerStats playerstats;
     public Text levelText;
@@ -12,7 +12,7 @@ public class UIManager : MonoBehaviour {
     public Text defenceLevelText;
 
 
-	void Start ()
+    void Start()
     {
         if (!UIExists)
         {
@@ -25,10 +25,10 @@ public class UIManager : MonoBehaviour {
         }
 
         playerstats = GetComponent<PlayerStats>();
-	}
-	
+    }
 
-	void Update ()
+
+    void Update()
     {
         levelText.text = "Lvl: " + playerstats.currentLevel;
         attackLevelText.text = "Attack: " + playerstats.currentAttack;

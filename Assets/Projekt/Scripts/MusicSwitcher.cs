@@ -2,28 +2,28 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MusicSwitcher : MonoBehaviour {
-
-    private MusicController theMC;
+public class MusicSwitcher : MonoBehaviour
+{
+    private MusicController musicController;
     public int newTrack;
     public bool switchOnStart;
 
-	void Start ()
+    void Start()
     {
-        theMC = FindObjectOfType<MusicController>();
+        musicController = FindObjectOfType<MusicController>();
 
-        if(switchOnStart)
+        if (switchOnStart)
         {
-            theMC.SwitchTrack(newTrack);
+            musicController.SwitchTrack(newTrack);
             gameObject.SetActive(false);
         }
-	}
+    }
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.gameObject.name == "Paladin")
+        if (other.gameObject.name == "Paladin")
         {
-            theMC = FindObjectOfType<MusicController>();
+            musicController = FindObjectOfType<MusicController>();
             gameObject.SetActive(false);
         }
     }

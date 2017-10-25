@@ -1,10 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class EnemyController2 : MonoBehaviour
 {
-    Animator anim;
+    Animator enemy2Animation;
     public float moveSpeed;
     public float timeBetweenMove;
     private float timeBetweenMoveCounter;
@@ -14,8 +15,8 @@ public class EnemyController2 : MonoBehaviour
     private Rigidbody2D myRigidbody;
     private bool moving;
     private Vector3 moveDirection;
-    
-    private GameObject thePaladin;
+
+    private GameObject paladin;
     public string levelToLoad;
 
     void Start()
@@ -26,7 +27,7 @@ public class EnemyController2 : MonoBehaviour
         timeToMoveCounter = Random.Range(timeToMove * 0.75f, timeBetweenMove * 1.25f);
 
     }
-    
+
     void Update()
     {
         if (moving)
@@ -62,11 +63,11 @@ public class EnemyController2 : MonoBehaviour
         {
             Invoke("ChangeLevel", 0.2f);
         }
-        
+
     }
 
     void ChangeLevel()
     {
-        Application.LoadLevel(levelToLoad);
+        SceneManager.LoadScene(levelToLoad);
     }
 }

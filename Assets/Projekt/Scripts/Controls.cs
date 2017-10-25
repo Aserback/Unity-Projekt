@@ -17,7 +17,6 @@ public class Controls : MonoBehaviour
 
     private void OnGUI()
     {
-        //"Spiel Starten" Button
         if (GUI.Button(new Rect(Screen.width * guiPlacementX1, Screen.height * guiPlacementY1, Screen.width * guiPlacementButtonSizeX1, Screen.height * guiPlacementButtonSizeY1), buttonText))
         {
             SceneManager.LoadScene(levelToLoad);

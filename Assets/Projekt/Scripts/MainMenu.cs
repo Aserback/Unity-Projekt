@@ -59,7 +59,7 @@ public class MainMenu : MonoBehaviour
 
         if (GUI.Button(new Rect(Screen.width * guiPlacementX2, Screen.height * guiPlacementY2, Screen.width * guiPlacementButtonSizeX2, Screen.height * guiPlacementButtonSizeY2), controlsText))
         {
-            SceneManager.LoadScene(controlsCommand); 
+            SceneManager.LoadScene(controlsCommand);
         }
 
 

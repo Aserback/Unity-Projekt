@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerStats : MonoBehaviour {
-
+public class PlayerStats : MonoBehaviour
+{
     public int currentLevel;
     public int currentExp;
 
@@ -15,19 +15,19 @@ public class PlayerStats : MonoBehaviour {
     public int currentAttack;
     public int currentDefence;
 
-	// Use this for initialization
-	void Start ()
-    {        
-        currentAttack = attackLevels[currentLevel];
-        currentDefence = defenceLevels[currentLevel];	
-	}
-	
-	// Update is called once per frame
-	void Update ()
+
+    void Start()
     {
-		if (currentExp >= toLevelUp[currentLevel])
+        currentAttack = attackLevels[currentLevel];
+        currentDefence = defenceLevels[currentLevel];
+    }
+
+
+    void Update()
+    {
+        if (currentExp >= toLevelUp[currentLevel])
             LevelUp();
-	}
+    }
 
     public void AddExperience(int experienceToAdd)
     {

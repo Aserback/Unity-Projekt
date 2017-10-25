@@ -2,36 +2,38 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MusicController : MonoBehaviour {
-
+public class MusicController : MonoBehaviour
+{
     public static bool mcExists;
 
     public AudioSource[] musicTracks;
     public int currentTrack;
     public bool musicCanPlay;
-    
-	void Start ()
+
+    void Start()
     {
-        if (!mcExists)
+        if (mcExists)
+        {
+            Destroy(gameObject);
+        }
+        else
         {
             mcExists = true;
             DontDestroyOnLoad(transform.gameObject);
         }
-        else
-            Destroy(gameObject);
     }
-	
-	// Update is called once per frame
-	void Update ()
+
+    // Update is called once per frame
+    void Update()
     {
-		if (musicCanPlay)
+        if (musicCanPlay)
         {
             if (!musicTracks[currentTrack].isPlaying)
                 musicTracks[currentTrack].Play();
         }
         else
             musicTracks[currentTrack].Stop();
-	}
+    }
 
     public void SwitchTrack(int newTrack)
     {
