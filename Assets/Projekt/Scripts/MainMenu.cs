@@ -47,13 +47,6 @@ public class MainMenu : MonoBehaviour
   public string creditsCommand;
   public string creditsText;
 
-  private void Start() {
-    System.Console.WriteLine("SdasdASD");
-
-  }
-
-
-
   private void OnGUI() {
     //Anzeigen des Hintergrunds
     GUI.DrawTexture(new Rect(0, 0, Screen.width, Screen.height), backgroundTexture1);

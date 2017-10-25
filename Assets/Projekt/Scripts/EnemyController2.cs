@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class EnemyController2 : MonoBehaviour
+public class RedEnemy : MonoBehaviour
 {
-  Animator enemy2Animation;
+  Animator redEnemyAnimation;
   public float moveSpeed;
   public float timeBetweenMove;
   private float timeBetweenMoveCounter;
@@ -51,10 +51,9 @@ public class EnemyController2 : MonoBehaviour
   }
 
   void OnCollisionEnter2D(Collision2D other) {
-    if (other.gameObject.name == "Paladin") {
+    if (PlayerController.PLAYER_NAME.Equals(other.gameObject.name)) {
       Invoke("ChangeLevel", 0.2f);
     }
-
   }
 
   void ChangeLevel() {

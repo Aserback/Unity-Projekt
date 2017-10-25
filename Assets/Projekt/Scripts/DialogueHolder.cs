@@ -12,7 +12,7 @@ public class DialogueHolder : MonoBehaviour
   }
 
   void OnTriggerStay2D(Collider2D other) {
-    if (other.gameObject.name == "Paladin" && Input.GetKeyUp(KeyCode.E)) {
+    if (PlayerController.PLAYER_NAME.Equals(other.gameObject.name) && Input.GetKeyUp(KeyCode.E)) {
       if (!dialogueManager.dialogueActive) {
         dialogueManager.dialogueLines = dialogueLines;
         dialogueManager.currentLine = 0;

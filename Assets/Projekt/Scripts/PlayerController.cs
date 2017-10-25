@@ -4,6 +4,8 @@ using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
+  public static string PLAYER_NAME = "Paladin";
+
   private float walkspeed = 5;
   Animator playerAnimation;
   private bool isFacingRight = true;

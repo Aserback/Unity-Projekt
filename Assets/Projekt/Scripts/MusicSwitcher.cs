@@ -4,23 +4,22 @@ using UnityEngine;
 
 public class MusicSwitcher : MonoBehaviour
 {
-
-  private MusicController theMC;
+  private MusicController musicManager;
   public int newTrack;
   public bool switchOnStart;
 
   void Start() {
-    theMC = FindObjectOfType<MusicController>();
+    musicManager = FindObjectOfType<MusicController>();
 
-    if (switchOnStart == true) {
-      theMC.SwitchTrack(newTrack);
+    if (switchOnStart) {
+      musicManager.SwitchTrack(newTrack);
       gameObject.SetActive(false);
     }
   }
 
   void OnTriggerEnter2D(Collider2D other) {
-    if (other.gameObject.name == "Paladin") {
-      theMC = FindObjectOfType<MusicController>();
+    if (PlayerController.PLAYER_NAME.Equals(other.gameObject.name)) {
+      musicManager = FindObjectOfType<MusicController>();
       gameObject.SetActive(false);
     }
   }

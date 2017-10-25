@@ -4,13 +4,9 @@ using UnityEngine;
 
 public class MusicController : MonoBehaviour
 {
-
   public static bool mcExists;
-
   public AudioSource[] musicTracks;
-
   public int currentTrack;
-
   public bool musicCanPlay;
 
   // Use this for initialization
