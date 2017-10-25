@@ -4,24 +4,20 @@ using UnityEngine;
 
 public class DialogueHolder : MonoBehaviour
 {
-    private DialogueManager dialogueManager;
-    public string[] dialogueLines;
+  private DialogueManager dialogueManager;
+  public string[] dialogueLines;
 
-    void Start()
-    {
-        dialogueManager = FindObjectOfType<DialogueManager>();
-    }
+  void Start() {
+    dialogueManager = FindObjectOfType<DialogueManager>();
+  }
 
-    void OnTriggerStay2D(Collider2D other)
-    {
-        if (other.gameObject.name == "Paladin" && Input.GetKeyUp(KeyCode.E))
-        {
-            if (!dialogueManager.dialogueActive)
-            {
-                dialogueManager.dialogueLines = dialogueLines;
-                dialogueManager.currentLine = 0;
-                dialogueManager.ShowDialogue();
-            }
-        }
+  void OnTriggerStay2D(Collider2D other) {
+    if (other.gameObject.name == "Paladin" && Input.GetKeyUp(KeyCode.E)) {
+      if (!dialogueManager.dialogueActive) {
+        dialogueManager.dialogueLines = dialogueLines;
+        dialogueManager.currentLine = 0;
+        dialogueManager.ShowDialogue();
+      }
     }
+  }
 }

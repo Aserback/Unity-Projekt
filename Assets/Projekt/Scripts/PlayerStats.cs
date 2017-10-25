@@ -4,41 +4,37 @@ using UnityEngine;
 
 public class PlayerStats : MonoBehaviour
 {
-    public int currentLevel;
-    public int currentExp;
+  public int currentLevel;
+  public int currentExp;
 
-    public int[] toLevelUp;
+  public int[] toLevelUp;
 
-    public int[] attackLevels;
-    public int[] defenceLevels;
+  public int[] attackLevels;
+  public int[] defenceLevels;
 
-    public int currentAttack;
-    public int currentDefence;
-
-
-    void Start()
-    {
-        currentAttack = attackLevels[currentLevel];
-        currentDefence = defenceLevels[currentLevel];
-    }
+  public int currentAttack;
+  public int currentDefence;
 
 
-    void Update()
-    {
-        if (currentExp >= toLevelUp[currentLevel])
-            LevelUp();
-    }
+  void Start() {
+    currentAttack = attackLevels[currentLevel];
+    currentDefence = defenceLevels[currentLevel];
+  }
 
-    public void AddExperience(int experienceToAdd)
-    {
-        currentExp += experienceToAdd;
-    }
 
-    public void LevelUp()
-    {
-        currentLevel++;
-        currentAttack = attackLevels[currentLevel];
-        currentDefence = defenceLevels[currentLevel];
-    }
+  void Update() {
+    if (currentExp >= toLevelUp[currentLevel])
+      LevelUp();
+  }
+
+  public void AddExperience(int experienceToAdd) {
+    currentExp += experienceToAdd;
+  }
+
+  public void LevelUp() {
+    currentLevel++;
+    currentAttack = attackLevels[currentLevel];
+    currentDefence = defenceLevels[currentLevel];
+  }
 
 }
