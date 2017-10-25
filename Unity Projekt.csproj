@@ -84,12 +84,12 @@
     <Compile Include="Assets\Projekt\Scripts\Credits.cs" />
     <Compile Include="Assets\Projekt\Scripts\DialogueHolder.cs" />
     <Compile Include="Assets\Projekt\Scripts\DialogueManager.cs" />
-    <Compile Include="Assets\Projekt\Scripts\EnemyController1.cs" />
     <Compile Include="Assets\Projekt\Scripts\EnemyController2.cs" />
     <Compile Include="Assets\Projekt\Scripts\LoadNewArea.cs" />
     <Compile Include="Assets\Projekt\Scripts\MainMenu.cs" />
     <Compile Include="Assets\Projekt\Scripts\MusicController.cs" />
     <Compile Include="Assets\Projekt\Scripts\MusicSwitcher.cs" />
+    <Compile Include="Assets\Projekt\Scripts\MusicSwitcherCredits.cs" />
     <Compile Include="Assets\Projekt\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Projekt\Scripts\PlayerStartPoint.cs" />
     <Compile Include="Assets\Projekt\Scripts\PlayerStats.cs" />

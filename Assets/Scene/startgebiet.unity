@@ -409,7 +409,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66c84c0ebe788ce47a8f88e7758ad869, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  newTrack: 1
+  newTrack: 0
   switchOnStart: 1
 --- !u!4 &310891402
 Transform:
@@ -2272,9 +2272,31 @@ Prefab:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 23934716452529198, guid: 0444fdd4d6eaa1c4685d21ace3ad6bf2,
+        type: 2}
+      propertyPath: m_SortingLayerID
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 23934716452529198, guid: 0444fdd4d6eaa1c4685d21ace3ad6bf2,
+        type: 2}
+      propertyPath: m_SortingLayer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0444fdd4d6eaa1c4685d21ace3ad6bf2, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1592157668 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1396696831456208, guid: 0444fdd4d6eaa1c4685d21ace3ad6bf2,
+    type: 2}
+  m_PrefabInternal: {fileID: 1592157667}
+--- !u!81 &1592157669
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1592157668}
+  m_Enabled: 1
 --- !u!1 &1652908060 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: b24a887e87c2adf4c8e33b897307eaaa, type: 2}

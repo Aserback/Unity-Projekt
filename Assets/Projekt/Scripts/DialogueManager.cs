@@ -15,6 +15,7 @@ public class DialogueManager : MonoBehaviour
   void Update() {
     if (dialogueActive && Input.GetKeyDown(KeyCode.E)) {
       currentLine++;
+      dialogueText.text = dialogueLines[currentLine];
     }
 
     if (currentLine >= dialogueLines.Length) {
@@ -23,7 +24,6 @@ public class DialogueManager : MonoBehaviour
       currentLine = 0;
     }
 
-    dialogueText.text = dialogueLines[currentLine];
   }
 
   public void ShowBox(string dialogue) {

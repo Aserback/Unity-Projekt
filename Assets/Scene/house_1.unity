@@ -517,6 +517,21 @@ Prefab:
       propertyPath: m_Points.m_Paths.Array.data[15].Array.data[2].x
       value: 9.284058
       objectReference: {fileID: 0}
+    - target: {fileID: 68839891687970028, guid: 8336b9a3b88d0fa46ab1176b805165c0,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 68031964245266558, guid: 8336b9a3b88d0fa46ab1176b805165c0,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 60915115231534192, guid: 8336b9a3b88d0fa46ab1176b805165c0,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8336b9a3b88d0fa46ab1176b805165c0, type: 2}
   m_IsPrefabParent: 0
@@ -717,7 +732,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1262596145}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -118.91, y: 13.24, z: 0}
+  m_LocalPosition: {x: -119.87, y: 21.72, z: 0}
   m_LocalScale: {x: 2.8802805, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
