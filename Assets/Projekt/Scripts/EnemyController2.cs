@@ -5,7 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class RedEnemy : MonoBehaviour
 {
-  Animator redEnemyAnimation;
   public float moveSpeed;
   public float timeBetweenMove;
   private float timeBetweenMoveCounter;
@@ -16,7 +15,6 @@ public class RedEnemy : MonoBehaviour
   private bool moving;
   private Vector3 moveDirection;
 
-  private GameObject paladin;
   public string levelToLoad;
 
   void Start() {
