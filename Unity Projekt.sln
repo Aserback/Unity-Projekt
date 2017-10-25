@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity Projekt", "Unity Projekt.csproj", "{48A6AFC6-12A7-2F52-259A-E58033AA6D61}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity Projekt.Editor", "Unity Projekt.Editor.csproj", "{D0E6A425-89CD-C677-55C5-9332EF9B7C95}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{815EE8E7-523D-4BAA-BFDD-94CE5557978E}"
+	ProjectSection(SolutionItems) = preProject
+		CHANGELOG.md = CHANGELOG.md
+		README.md = README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{48A6AFC6-12A7-2F52-259A-E58033AA6D61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48A6AFC6-12A7-2F52-259A-E58033AA6D61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48A6AFC6-12A7-2F52-259A-E58033AA6D61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48A6AFC6-12A7-2F52-259A-E58033AA6D61}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0E6A425-89CD-C677-55C5-9332EF9B7C95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0E6A425-89CD-C677-55C5-9332EF9B7C95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0E6A425-89CD-C677-55C5-9332EF9B7C95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0E6A425-89CD-C677-55C5-9332EF9B7C95}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FFA2F87C-7B4C-45C6-BC5B-EFA496614199}
+	EndGlobalSection
+EndGlobal

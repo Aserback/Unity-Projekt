@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scene/startgebiet.unity
+    guid: 83c17639d21240c42ab0d48f2fde0f9f
+  - enabled: 1
+    path: Assets/Scene/house_1.unity
+    guid: d358703cb9d09984e9ada822aaf66b10
+  - enabled: 1
+    path: Assets/Scene/basement_1.unity
+    guid: d3880666888f43e489497f901bfcd0d6
+  - enabled: 1
+    path: Assets/Scene/crossroad_1.unity
+    guid: 5c5d453c42c33b74387dd3636a86e7c7
+  - enabled: 1
+    path: Assets/Scene/farmhouse_1.unity
+    guid: 851c3005cf79ab24bb06a5502798a4dc
+  - enabled: 1
+    path: Assets/Scene/burgeingang_1.unity
+    guid: e57d8946c4b5ecc4fa20c0860d19a169
+  - enabled: 1
+    path: Assets/Scene/thronraum_1.unity
+    guid: 963d0bccb0e252f4384b0b154f7ea310
+  - enabled: 1
+    path: Assets/Scene/MainMenu.unity
+    guid: 8b2534c3bd84ea14fb6f21697978e622
+  - enabled: 1
+    path: Assets/Scene/Controlls.unity
+    guid: b141a636c8b354b46bd4faca184079a1
+  - enabled: 1
+    path: Assets/Scene/Credits.unity
+    guid: b6623be7aa4f9594f88a87521eecb7d4
