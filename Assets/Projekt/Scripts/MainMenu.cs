@@ -47,25 +47,22 @@ public class MainMenu : MonoBehaviour
 
     private void OnGUI()
     {
-        //Anzeigen des Hintergrunds
         GUI.DrawTexture(new Rect(0, 0, Screen.width, Screen.height), backgroundTexture1);
         GUI.DrawTexture(new Rect(Screen.width * guiPlacementTitleX1, Screen.height * guiPlacementTitleY1, Screen.width * guiPlacementTitleSizeX1, Screen.height * guiPlacementTitleSizeY1), backgroundTexture2);
 
-        //Anzeige der Buttons
 
-        //"Spiel Starten" Button
         if (GUI.Button(new Rect(Screen.width * guiPlacementX1, Screen.height * guiPlacementY1, Screen.width * guiPlacementButtonSizeX1, Screen.height * guiPlacementButtonSizeY1), startGameText))
         {
             SceneManager.LoadScene(startGameCommand);
         }
 
-        //"Controls" Button
+
         if (GUI.Button(new Rect(Screen.width * guiPlacementX2, Screen.height * guiPlacementY2, Screen.width * guiPlacementButtonSizeX2, Screen.height * guiPlacementButtonSizeY2), controlsText))
         {
             SceneManager.LoadScene(controlsCommand); 
         }
 
-        //"Credit" Button
+
         if (GUI.Button(new Rect(Screen.width * guiPlacementX3, Screen.height * guiPlacementY3, Screen.width * guiPlacementButtonSizeX3, Screen.height * guiPlacementButtonSizeY3), creditsText))
         {
             SceneManager.LoadScene(creditsCommand);
