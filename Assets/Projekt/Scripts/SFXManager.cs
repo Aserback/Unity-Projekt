@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class SFXManager : MonoBehaviour
 {
-
   public AudioSource playerDead;
   public AudioSource playerAttack1;
   public AudioSource playerAttack2;

@@ -23,7 +23,6 @@ public class DialogueManager : MonoBehaviour
       dialogueActive = false;
       currentLine = 0;
     }
-
   }
 
   public void ShowBox(string dialogue) {

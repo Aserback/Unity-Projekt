@@ -22,7 +22,6 @@ public class RedEnemy : MonoBehaviour
 
     timeBetweenMoveCounter = Random.Range(timeBetweenMove * 0.75f, timeBetweenMove * 1.25f);
     timeToMoveCounter = Random.Range(timeToMove * 0.75f, timeBetweenMove * 1.25f);
-
   }
 
   void Update() {
@@ -45,7 +44,6 @@ public class RedEnemy : MonoBehaviour
         moveDirection = new Vector3(Random.Range(-1f, 1f) * moveSpeed, Random.Range(-1f, 1f) * moveSpeed);
       }
     }
-
   }
 
   void OnCollisionEnter2D(Collision2D other) {

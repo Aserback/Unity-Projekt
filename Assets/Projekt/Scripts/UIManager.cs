@@ -11,7 +11,6 @@ public class UIManager : MonoBehaviour
   public Text attackLevelText;
   public Text defenceLevelText;
 
-
   void Start() {
     if (!UIExists) {
       UIExists = true;
@@ -22,7 +21,6 @@ public class UIManager : MonoBehaviour
 
     playerstats = GetComponent<PlayerStats>();
   }
-
 
   void Update() {
     levelText.text = "Lvl: " + playerstats.currentLevel;
