@@ -9,7 +9,6 @@ public class MusicController : MonoBehaviour
   public int currentTrack;
   public bool musicCanPlay;
 
-  // Use this for initialization
   void Start() {
     if (!mcExists) {
       mcExists = true;
@@ -19,7 +18,6 @@ public class MusicController : MonoBehaviour
     }
   }
 
-  // Update läuft einmal pro Frame
   void Update() {
     if (musicCanPlay) {
       if (!musicTracks[currentTrack].isPlaying) {

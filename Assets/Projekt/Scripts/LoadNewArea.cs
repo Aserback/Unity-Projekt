@@ -10,6 +10,7 @@ public class LoadNewArea : MonoBehaviour
   private PlayerController paladin;
 
   void Start() {
+    // search the paladin object in the whole project and save it to this variable
     paladin = FindObjectOfType<PlayerController>();
   }
 
