@@ -107,10 +107,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26846d20e5a92834391df2d60e4e3712, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 4
-  timeBetweenMove: 2
-  timeToMove: 1
-  levelToLoad: Credits
+  moveSpeed: 0
+  timeBetweenMove: 0
+  timeToMove: 0
+  levelToLoad: 
 --- !u!212 &212941181016516318
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -152,4 +152,3 @@ SpriteRenderer:
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0

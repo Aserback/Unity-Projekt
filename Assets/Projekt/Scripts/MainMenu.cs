@@ -48,9 +48,8 @@ public class MainMenu : MonoBehaviour
   public string creditsText;
 
   private MusicController musicController;
+
   private void OnGUI() {
-    musicController = FindObjectOfType<MusicController>();
-    musicController.SwitchTrack(1);
 
     //Anzeigen des Hintergrunds
     GUI.DrawTexture(new Rect(0, 0, Screen.width, Screen.height), backgroundTexture1);
