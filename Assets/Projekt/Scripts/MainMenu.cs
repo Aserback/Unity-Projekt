@@ -47,8 +47,6 @@ public class MainMenu : MonoBehaviour
   public string creditsCommand;
   public string creditsText;
 
-  private MusicController musicController;
-
   private void OnGUI() {
 
     //Anzeigen des Hintergrunds
